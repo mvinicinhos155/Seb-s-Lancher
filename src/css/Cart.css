@@ -1,0 +1,251 @@
+.container_cart {
+    width: 100%;
+    height: 100vh;
+}
+
+.product_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+#cart {
+    font-size: 30px;
+}
+
+.product_cart {
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    overflow: hidden;
+}
+
+.cards_cart {
+    width: 700px;
+    height: 160px;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0px 0px 11px 3px rgba(209, 207, 207, 0.671);
+}
+
+.img_cart img {
+    width: 180px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.about_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about_cart h1 {
+    margin-bottom: 16px;
+}
+
+.price_cart {
+    width: 400px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+} 
+
+#price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+}
+
+#price span {
+    font-size: 20px;
+    color: #DB1A1A;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#price span:hover {
+    transition: all 0.7s;
+    transform: scale(1.07);
+}
+
+#price h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.buttom_cart {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #888888;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+}
+
+.title_total {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title_total h1 {
+    font-size: 23px;
+}
+
+
+.price_total {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.price_total h1 {
+    font-size: 23px;
+}
+
+.price_total button {
+    width: 200px;
+    height: 35px;
+    background-color: #DB1A1A;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 21px;
+    transition: all 0.7s;
+}
+
+.price_total button:hover {
+    background-color: #790f0f;
+    transition: all 0.7s;
+}
+
+/*Carrinho das pages*/
+.cart {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #DB1A1A;
+    border: 1px solid rgb(122, 122, 122);
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    cursor: pointer;
+    transition: all 0.7s;
+    box-shadow: 0px 0px 11px 3px rgba(209, 207, 207, 0.671);
+}
+
+.cart:hover {
+    background-color: #c43e3e70;
+    transition: all 0.7s;
+    transform: scale(1.07);
+}
+
+@media(max-width: 480px) {
+    .cart {
+        display: none;
+    }
+
+    .container_cart {
+        width: 400px;
+        height: 100vh;
+    }
+
+    .product_title {
+        width: 400px;
+    }
+
+    .product_cart {
+        width: 400px;
+    }
+
+    .cards_cart {
+        width: 380px;
+        height: 100px;
+    }
+
+    .img_cart img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about_cart {
+        width: 200px;
+    }
+
+    .about_cart p {
+        display: none;
+    }
+
+    .about_cart h1 {
+        font-size: 17px;
+    }
+
+    .price_cart {
+        width: 100px;
+    } 
+
+    #price {
+        height: 90px;
+    }
+
+    #price span {
+        font-size: 14px;
+        color: #DB1A1A;
+    }
+
+    #price h3 {
+        font-size: 16px;
+    }
+
+    .buttom_cart {
+        width: 400px;
+        height: 70px;
+        margin-bottom: 60px;
+        border-top: 1px solid #888888;
+        border-bottom: none;
+    }
+
+
+    .title_total h1 {
+        font-size: 17px;
+    }
+
+
+    .price_total {
+        height: 50px;
+    }
+
+    .price_total h1 {
+        font-size: 17px;
+    }
+
+    .price_total button {
+        width: 100px;
+        height: 35px;
+        font-size: 17px;
+    }
+}

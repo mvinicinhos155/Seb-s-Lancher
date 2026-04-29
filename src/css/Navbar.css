@@ -1,0 +1,231 @@
+.container_navbar {
+    width: 100%;
+    height: 112px;
+    background-color: #5476F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_left{
+  display: flex;  
+}
+
+.nav_img {
+    padding: 10px;
+    width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img {
+    width: 120px;
+    height: 70px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.link {
+  color: rgb(230, 222, 222);
+  margin: 10px;
+  text-decoration: none;
+}
+
+.active {
+  color: #e70404a8;
+  font-weight: bold;
+  transition: all 0.9s;  
+}
+
+.nav_right {
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.user:hover{
+    background-color: #ffffff23;
+    color: #ffffffa1;
+    transition: all 0.9s;
+}
+
+.perfil {
+    width: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.perfil span {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: black;
+    text-decoration: none;
+}
+
+.perfil span:hover {
+    border-bottom: 1px solid #b6b6b6;
+    transition: all 0.7s;
+}
+
+
+/*component navbar publico*/
+.overlay_navbar {
+    left: 0;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal_navbar {
+     background-color: white;
+    padding: 20px;
+    width: 650px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+.fechar-navbar{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: right;
+}
+
+.fechar-navbar button {
+     background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #ad1111;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.fechar-navbar button:hover {
+    color: #ad1111a8;
+    transform: scale(1.09);
+    transition: all 0.9s;
+}
+
+.element_navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+.element_navbar p {
+    margin-bottom: 20px;
+    color: #5476F4;
+    font-weight: 600;
+    font-size: 21px;    
+}
+
+#login_navbar {
+    width: 250px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #5476F4;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+    border: none;
+    transition: all 0.9s;
+}
+
+#login_navbar:hover {
+    background-color: #293975;
+    transition: all 0.9s;
+} 
+
+#cadastro_navbar {
+    width: 250px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #DB1A1A;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+    border: none;
+    transition: all 0.9s;
+}
+
+#cadastro_navbar:hover {
+    background-color: #660404;
+    transition: all 0.9s;
+}
+/*fim*/
+
+@media(max-width: 480px) {
+  .container_navbar {
+      width: 400px;
+   } 
+   
+   .nav_left{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    .nav_img {
+        width: 380px;
+    }
+
+    #img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .menu {
+    display: none;
+    }
+
+
+    .link {
+    display: none;
+    }
+
+    .user {
+        display: none;
+    }
+}

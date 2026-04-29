@@ -1,0 +1,156 @@
+.container_login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 1100px;
+    height: 661px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #D0D0D0;
+    border-radius: 7px;
+    box-shadow: -1px 1px 11px 0px rgba(163,157,157,0.75);
+}
+
+.title_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.title_login img {
+    width: 150px;
+    height: 130px;   
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input span {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.input input {
+    width: 352px;
+    height: 45px;
+    font-size: 17px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 202, 202, 0.671);
+    box-shadow: -1px 1px 11px 0px rgba(163,157,157,0.75);
+}
+
+.check {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.check button {
+    font-size: 19px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.check button:hover {
+    color: #353535;
+    transition: all 0.9s;
+}
+
+.text1 {
+    width: 300px;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+}
+
+.text1 span {
+    color: #F90E0E;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.text1 span:hover {
+    color: #f90e0e91;
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button button {
+    width: 170px;
+    height: 37px;
+    font-size: 18px;
+    background-color: #5476F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: all 0.9s;
+}
+
+.button button:hover {
+    transition: all 0.9s;
+    transform: scale(1.09);
+}
+
+.erro {
+   margin-bottom: 20px;
+    color: #F90E0E;
+}
+
+.text a {
+    color: #F90E0E;
+    text-decoration: none;
+    transition: all 0.9s;
+}
+
+.text a:hover {
+    color: #f90e0ea1;
+    transition: all 0.9s;
+    text-decoration: underline;
+}
+
+@media(max-width: 480px) {
+    .container_login {
+        width: 400px;
+    }
+
+    .login {
+        border: none;
+        box-shadow: none;
+        width: 400px;
+    }
+    
+    .input input {
+        width: 300px;
+        height: 40px;
+    }
+
+    .button button {
+        width: 140px;
+        height: 35px;
+    }
+}
