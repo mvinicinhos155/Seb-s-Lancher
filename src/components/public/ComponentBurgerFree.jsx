@@ -4,7 +4,6 @@ import { TiDelete } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
 import ComponetMenuFree from "../../components/public/ComponentMenuFree";
 import ComponentFooter from "../ComponentFooter";
-import Img from "../../assets/chocolate.jpg";
 import "../../css/Index.css";
 
 function ComponentBurgerFree() {

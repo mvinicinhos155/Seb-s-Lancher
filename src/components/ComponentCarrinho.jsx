@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { Navigate, useNavigate } from "react-router-dom";
 import { FaTrashCan } from "react-icons/fa6";
-import Test from "../assets/chocolate.jpg";
 import "../css/Cart.css";
 import ComponentNavMobile from "./ComponentNavMobile";
 
