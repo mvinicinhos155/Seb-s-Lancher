@@ -10,7 +10,7 @@ function Pix () {
     useEffect(() => {
         const token = localStorage.getItem("token")
         const getPix = async () => {
-            const response = await fetch("http://localhost:3000/pix", {
+            const response = await fetch("https://api-lancher.onrender.com/pix", {
                 headers: { "Authorization" : `Bearer ${token}`}
             });
             const data = await response.json();
@@ -47,7 +47,7 @@ function Pix () {
                 <img src={`data:image/png;base64,${pix.qrCode}`} alt="QR Code Pix" />
             </div>
             <div className="copiacola">
-                <span>{pix.copiaCola} </span>
+                <span>{pix.copiaCola}</span>
                 <button onClick={CopiarColar}>Copiar</button>
             </div>
             <div className="voltar">

@@ -51,7 +51,7 @@ function App() {
            <Route path="/icecream" element={<ProtectedRouter><IceCream/></ProtectedRouter>}/>
            <Route path="/cart" element={<ProtectedRouter><Cart/></ProtectedRouter>}/>
            <Route path="/pedido" element={<ProtectedRouter><Pedidos/></ProtectedRouter>}/>
-           <Route path="pix" element={<ProtectedRouter><Pix/></ProtectedRouter>}/>
+           <Route path="pix" element={<Pix/>}/>
             <Route element={<AuthLayoutAdmin/>}>
                 <Route path="/pedidos" element={<AdminRoute><AdminPagePedidos/></AdminRoute>}/>
                 <Route path="/add_product" element={<AdminRoute><AdminPageAdd/></AdminRoute>}/>
