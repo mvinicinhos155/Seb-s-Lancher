@@ -252,8 +252,10 @@
 .priceAndbutton_admin {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 10px;
+    
 }
 
 .button_admin {
@@ -261,7 +263,7 @@
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     padding: 5px; 
 }
 

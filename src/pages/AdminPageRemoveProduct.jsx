@@ -11,7 +11,7 @@ function AdminPageRemove () {
 
     useEffect(() => {
         const getProduto = async () => {
-            const response = await fetch("http://localhost:3000/products");
+            const response = await fetch("https://api-lancher.onrender.com/products");
                 if(!response) {
                     return console.log("Erro ao pegar produtos");
                 }

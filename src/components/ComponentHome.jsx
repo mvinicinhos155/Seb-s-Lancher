@@ -45,7 +45,7 @@ function ComponentHome() {
         {Array.isArray(produtos) && produtos.map((p) => (
             <div key={p.id} className="card">
                 <div className="home_img">
-                    <img src={`${import.meta.env.VITE_API_URL}/uploads/${p.img}`} alt="produto" />
+                    <img src={p.img} alt="produto" />
                 </div>
                 <div className="about">
                     <h1>{p.name_product}</h1>
