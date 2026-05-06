@@ -53,7 +53,7 @@ function ComponentHome() {
                 </div>
                 <div className="priceAndbutton">
                 <div className="price">
-                    <h2>R$ 50.00</h2>
+                    <h2>{p.price}</h2>
                 </div>
                 <div className="home_button">
                     <button onClick={() => SalveProduct(p)}><GoPlusCircle/></button>
