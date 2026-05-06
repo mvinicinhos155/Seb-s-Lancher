@@ -26,7 +26,7 @@ function ComponentCarrinho() {
   const token = localStorage.getItem("token");
 
   try {
-    const response = await fetch("http://localhost:3000/pedido", {
+    const response = await fetch("https://api-lancher.onrender.com/pedido", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${token}`,
